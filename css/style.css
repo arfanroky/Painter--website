@@ -1,0 +1,244 @@
+/* -------------
+    Google Fonts
+-------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap');
+
+
+/* ---------------------
+    Universel Code
+---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------
+    Body and Basic code
+---------------------- */
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    background: var(--bg-primary-color);
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+}
+
+h1,h2{
+    font-weight: 800;
+}
+
+h3,h4{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.btn{
+    position: relative;
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
+    transition: var(--transition);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover{
+    background: var(--bg-secondary-color);
+}
+
+.extra--btn{
+    padding:0  8px;
+    border: 1px solid var(--primary-color);
+    outline-offset: 6px;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.extra--btn:hover{
+    color: var(--primary-color);
+}
+
+
+/* ------------------
+    Custom Property
+-------------------- */
+:root{
+    --primary-color: #35BDD0;
+    --secondary-color: #CAD5E2;
+    --bg-primary-color:  #120E43;
+    --bg-secondary-color:#03203C;
+    --box-shadow: 15px 15px 40px rgba(255,255,255,0.4), -15px -15px 40px rgba(255,255,255,0.4);
+    --transition: all .5s ease-in-out;
+    
+}
+
+
+/* --------------
+    Header
+---------------- */
+.header{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #35BDD0;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.navigation .nav__menu {
+    display: flex;
+}
+
+.nav__item{
+    list-style: none;
+    margin: 0 1.2rem;
+}
+
+.nav__list{
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.nav__list:hover{
+    color: var(--primary-color);
+}
+
+
+/* -----------------
+    Hero Section
+------------------- */
+.grid{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-column-gap: 100px;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.hero--img__box .hero__img{
+    width: 100%;
+    background-color: var(--primary-color);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 10px;
+    border: 10px solid var(--secondary-color);
+
+}
+
+.hero--info .hero--heading{
+    letter-spacing: 1.8px;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: .6rem;
+    color: var(--secondary-color);
+}
+
+.hero--info .hero--description{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.hero--info .hero--small__text{
+    font-size: 14px;
+    padding: 6px 16px;
+    color: var(--bg-primary-color);
+    background-color: var(--primary-color);
+}
+
+.hero__btn{
+    margin-top: 1rem;
+}
+
+.primary--color{
+    color: var(--primary-color);
+}
+
+
+/* ----------------
+    Paints Brand Name
+---------------- */
+.paint--box{
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.paint--box .paint--icon{
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: .8rem;
+}
+
+.paint--brandName__heading{
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+
+/* ---------------------
+    Media Queries
+---------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .header{
+        flex-direction: column;
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+    .logo{
+        margin-bottom: 20px;
+        padding: 4px;
+        border: 1px solid var(--primary-color);
+    }
+
+    .navigation .nav__menu{
+        flex-direction: column;
+    }
+
+    .nav__item{
+        margin-bottom: 1.2rem;
+    }
+
+    /* Hero section */
+   .hero__img{
+       margin-bottom: 1.2rem;
+   }
+   .hero--info .hero--heading{
+        font-size: 2rem;
+    }
+
+   
+}
