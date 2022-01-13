@@ -463,4 +463,23 @@ a {
   .hero--info .hero--heading {
     font-size: 2rem;
   }
+
+  .about--info{
+      order: 2;
+  }
+
+  .about--img__box{
+      order: 1;
+  }
+
+  .about__img{
+      border: none;
+      width: 100%;
+  }
+
+  .project--img__box .project__img{
+      width: 100%;
+      margin-bottom: 1rem;
+      border: none;
+  }
 }
