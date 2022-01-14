@@ -81,12 +81,11 @@ a {
 -------------------- */
 :root {
   --primary-color: #35bdd0;
-  --secondary-color: #cad5e2;
+  --secondary-color: #cad5e2c9;
   --accent-color: #758283;
   --bg-primary-color: #120e43;
   --bg-secondary-color: #03203c;
-  --box-shadow: 15px 15px 40px rgba(255, 255, 255, 0.4),
-    -15px -15px 40px rgba(255, 255, 255, 0.4);
+  --box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.4);
   --transition: all 0.5s ease-in-out;
   --simple-dark: rgba(0, 0, 0, 0.4);
 }
@@ -424,7 +423,7 @@ a {
   /* Header */
   .header {
     flex-direction: column;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
   }
 
   .logo {
@@ -441,7 +440,15 @@ a {
     margin-bottom: 1.2rem;
   }
 
+  .navber--icon{
+    font-size: 2rem;
+  }
+
+
   /* Hero section */
+  .grid{
+    grid-template-columns: 1fr;
+  }
   .hero__img {
     margin-bottom: 1.2rem;
   }
@@ -466,5 +473,18 @@ a {
     width: 100%;
     margin-bottom: 1rem;
     border: none;
+  }
+
+  /* footer */
+  .footer--menu{
+    padding: 1rem 0;
+  }
+  
+  .footer--flex{
+    flex-direction: column;
+  }
+
+  .footer--flex>p{
+    padding: .5rem 0;
   }
 }
